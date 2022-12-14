@@ -1,0 +1,469 @@
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#logo{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+}
+nav>a{
+    text-decoration: nome;
+    color: rgb(14, 14, 14);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+nav>a:hover{
+    color:#2980b9;
+}
+/*#primera-seccion{
+    background: linear-gradient( rgba(68, 68, 68, 0.259),rgba(57, 56, 56, 0.116)),url(Img/Inicial.png) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: aliceblue;
+}*/
+/*SUBtema*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #0b132b;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 50px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2980b9;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #297fb942;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+    font-size: 10px;
+}
+/*Navegacion niveles*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel{
+	display: block;
+}
+.navegacion .Tercmenu .Nivel{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Tercmenu .Nivel li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Tercmenu .Nivel li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion niveles*/
+/*Navegacion servicios*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel1{
+	display: block;
+}
+.navegacion .Cuartmenu .Nivel1{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Cuartmenu .Nivel1 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Cuartmenu .Nivel1 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion servicios*/
+/*Navegacion aula virtual*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel2{
+	display: block;
+}
+.navegacion .Quintmenu .Nivel2{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Quintmenu .Nivel2 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Quintmenu .Nivel2 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion aula virtual*/
+/*Navegacion actividades*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel3{
+	display: block;
+}
+.navegacion .Sextmenu .Nivel3{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Sextmenu .Nivel3 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Sextmenu .Nivel3 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion actividades*/
+/*Navegacion Matriculate ya */
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel4{
+	display: block;
+}
+.navegacion .Septimenu .Nivel4{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Septimenu .Nivel4 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Septimenu .Nivel4 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion Matriculate ya */
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	overflow-y: scroll;
+	background: #bcbcbc;
+}
+body {
+	font-family: sans-serif;
+	padding: 10px;
+	color: black;
+	background: rgb(255, 255, 255);
+	max-width: 750px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+::-webkit-scrollbar {
+	width: 22px;
+	border-left: 1px solid #bfbfbf;
+	border-right: 1px solid #bfbfbf;
+	box-shadow: -1px 4px 5px grey;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {   /*Es el deslizador. La pieza o carro que se desplaza sobre el rail.*/
+	background: #638fbb85;
+	border-radius: 5px;
+	border: 1px solid #bfbfbf;
+	box-shadow: inset 0 0 5px #638fbb;
+}
+::-webkit-scrollbar-thumb:hover {  /*Es el deslizador. La pieza o carro que se desplaza sobre el rail.*/
+	background: #51789fc9;
+}
+#header h1 {
+	padding: 20px;
+}
+#header a {
+	color: #fff; /*Es el color de la letra de navegacion*/
+}
+.nav {
+	background-color: #3072a2; /*Es el fondo del rectangulo de la navegacion*/
+	padding: 16px;
+	border: 2px solid rgb(52, 108, 193); /*La rayas o bordes de la navegacion*/
+}
+
+.nav li {
+	display: inline;
+	color: #f2f2f2; 
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.nav li:hover,
+.nav li:first-child {
+	background-color: rgba(244, 244, 244, 0.597); /*Es el color del subfondo de la barra de navegacion con forma de cuadrado*/
+}
+#header a:hover {
+	color: black;
+}
+#container {
+	width: 750px;
+	overflow: hidden;
+	margin: 10px auto;
+}
+
+#container .post h2 {
+	border-bottom: 3px solid #247cba; /*Es color de la linea que esta abajo de instrumentos*/
+	padding: 5px 0;
+}
+
+h3 {
+	padding: 0 0 10px 0;
+}
+
+.post {
+	width: 700px;
+	margin: 0 auto;
+	background-color: white; /*Es el fondo de todo el texto de instrumentos hasta planeacion*/
+	margin: 30px auto;
+	padding: 5px;
+}
+
+.post p {
+	padding: 10px;
+}
+
+ul {
+	padding: 0 20px;
+}

@@ -1,0 +1,740 @@
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#logo{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+}
+nav>a{
+    text-decoration: nome;
+    color: rgb(14, 14, 14);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+nav>a:hover{
+    color:#2980b9;
+}
+#primera-seccion{
+    background: linear-gradient( rgba(68, 68, 68, 0.259),rgba(57, 56, 56, 0.116)),url(/CalendarioWeb/img/Calendario.png) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: aliceblue;
+}
+/*SUBtema*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #0b132b;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 50px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2980b9;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+    font-size: 10px;
+}
+/*Navegacion niveles*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel{
+	display: block;
+}
+.navegacion .Tercmenu .Nivel{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Tercmenu .Nivel li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Tercmenu .Nivel li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion niveles*/
+/*Navegacion servicios*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel1{
+	display: block;
+}
+.navegacion .Cuartmenu .Nivel1{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Cuartmenu .Nivel1 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Cuartmenu .Nivel1 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion servicios*/
+/*Navegacion aula virtual*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel2{
+	display: block;
+}
+.navegacion .Quintmenu .Nivel2{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Quintmenu .Nivel2 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Quintmenu .Nivel2 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion aula virtual*/
+/*Navegacion actividades*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel3{
+	display: block;
+}
+.navegacion .Sextmenu .Nivel3{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Sextmenu .Nivel3 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Sextmenu .Nivel3 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion actividades*/
+/*Navegacion Matriculate ya */
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel4{
+	display: block;
+}
+.navegacion .Septimenu .Nivel4{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Septimenu .Nivel4 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Septimenu .Nivel4 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion Misión */
+/*Navegacion actividades*/
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel3{
+	display: block;
+}
+.navegacion .Sextmenu .Nivel3{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Sextmenu .Nivel3 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Sextmenu .Nivel3 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion actividades*/
+/*Navegacion Profesores ya */
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none; 
+	padding: 0 10px; /*el espacio de relleno requerido por todos los lados*/
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px; /*el espacio de relleno requerido por todos los lados*/
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel4{
+	display: block;
+}
+.navegacion .Septimenu .Nivel4{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Septimenu .Nivel4 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Septimenu .Nivel4 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion Profesores ya */
+/*Navegacion Matriculate ya */
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none; 
+	padding: 0 10px; /*el espacio de relleno requerido por todos los lados*/
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #dee1e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px; /*el espacio de relleno requerido por todos los lados*/
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #2697cf;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .Nivel5{
+	display: block;
+}
+.navegacion .Octabomenu .Nivel5{
+	display: none;
+	background: #297fb98e;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .Octabomenu .Nivel5 li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .Octabomenu .Nivel5 li a{
+	display: block;
+    font-size: 9px;
+}
+/*termina navegacion Matriculate ya */
+/*Parte del Nivel primaria */
+body {
+    margin: 0; /*margen de 0*/ /*el espacio de relleno requerido por todos los lados*/
+}
+
+main {
+    display: block;
+}
+.title {
+    font-size: 2.5rem;
+    text-align: var(--align-title);
+    color: var(--color-title);
+}
+::before, ::after {
+    margin: 0; /*el espacio de relleno requerido por todos los lados*/
+    box-sizing: border-box;
+}
+hr{
+    background-color: black; /*Color del hr*/
+    width: 60%; /*Tamaño de hr*/
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.title--border::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    height: 4px;
+    background-color: var(--color-primary);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+.about{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+}
+
+.aboutcourse{
+    width: 90%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.aboutparagraph{
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.aboutpicture{
+    text-align: center;
+}
+
+.aboutimg{
+    width: 600px;
+    padding: 3px; /*Ayuda a mover la imagen de arriba para abajo con el PX*/
+}
+/*fondo de mision*/
+body{
+	background-color: #dee1e4; /*Color del fonde donde esta la infomarcion .*/
+}
+
+h2{
+	background-color: #dee1e4;
+	
+}
+/*Separacion de mi texto*/
+#texto{
+	background-color: #dee1e4;
+	line-height: 1.5;
+}
+/*carrusel*/
+
+/*Parte final de Nivel Primaria*/
+/*Galeria de fotos*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(5, 91, 144, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
+/*Termian galeria de fotos*/
+/* comienza footer*/
+
+footer{
+    background-color: black;
+    color: #f4f5f9;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

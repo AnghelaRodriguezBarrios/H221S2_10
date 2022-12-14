@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Img/descarga.png">
+    <title>ACTIVIDADES</title>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src = "js/jquery.min.js"></script>
+    <script src = "js/moment.min.js"></script>
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <script src = "js/fullcalendar.min.js"></script>
+    <link href="/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="/CalendarioWeb/css/estilo.css" rel="stylesheet" type="text/css" />
+    <script src = "js/es.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="primera-seccion">
+        <div class="interior">
+            <a href="/Institucion.html" class="logo"><img src="/Historia/Img/organigrama0.1.png" alt="Logo"></a>
+        </div>
+        <div>
+            <nav class="navegacion">
+              <ul>
+                <li><a href="/Institucion.html">Inicio</a></li>
+                <li class="submenu">
+                <a href="/Institucion.html" >Nosotros</a>
+                <ul class="hijos">
+                    <li><a href="/Historia.html">Historia</a></li>
+                    <li><a href="/Mision.html">Mision</a></li>
+                    <li><a href="Valores.html">Valores</a></li>
+                    <li><a href="/Organigra.html">Organigrama</a></li>
+                  </ul>
+                </li>
+                <li class="Tercmenu">
+                  <a href="/Institucion.html" >Niveles</a>
+                  <ul class="Nivel">
+                    <li><a href="/Inicial.html">Inicial</a></li>
+                    <li><a href="/Primaria.html">Primaria</a></li>
+                    <li><a href="/Secundaria.html">Secundaria</a></li>
+                  </ul>
+                </li>
+                
+                <li class="Cuartmenu">
+                    <a href="/Institucion.html">Servicio</a>
+                    <ul class="Nivel1">
+                        <li><a href="/Psicopedagogía.html">Psicopedagogía</a></li>
+                        <li><a href="/Idiomas.html">Idiomas</a></li>
+                        <li><a href="/Horario.Html">Horarios</a></li>
+                        <li><a href="/Computo.html">Computo</a></li>
+                      </ul>
+                </li>
+                <li class="Quintmenu">
+                    <a href="/Institucion.html">Aula VirtualL</a>
+                    <ul class="Nivel2">
+                        <li><a href="https://maryland.edu.pe/aulavirtual/">Office 365</a></li>
+                      </ul>
+                </li>
+                <li class="Sextmenu">
+                    <a href="/Institucion.html">Actividades</a>
+                    <ul class="Nivel3">
+                        <li><a href="/CalendarioWeb/Calendario.html">Calendario</a></li>
+                        <li><a href="/Villancicos.html">Villancicos</a></li>
+                      </ul>
+                </li>
+                <li class="Septimenu">
+                  <a href="/Institucion.html" >Profesores</a>
+                  <ul class="Nivel4">
+                    <li><a href="/Profe-Inicial.html">Inicial</a></li>
+                    <li><a href="/Profe-Primaria.html">Primaria</a></li>
+                    <li><a href="/Profe-Secun.html">Secundaria</a></li>
+                  </ul>
+                </li>
+              <li class="Octabomenu">
+                  <a href="/Matriculate.html">MATRICULATE YA </a>
+                  <ul class="Nivel5">
+                      <li><a href="/Registro.html">Requisitos</a></li>
+                      <li><a href="/Documentacio.html">Documentacion</a></li>
+                    </ul>
+              </li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+<main class="main">
+        <section class="about container">
+  
+            <div class="aboutcourse">
+                <h2 class="title title--border">CALENDARIO</h2>
+        
+        </section>
+    </main>
+<div class = "container">
+             <div class="row">
+                <div class="col"></div>
+                <div class="col7"> <div id="CalendarioWeb"></div></div>
+                <div class="col"></div>
+             </div>
+        </div>
+<script>
+    $(document).ready(function(){
+        $('#CalendarioWeb').fullCalendar({
+          header:{
+            left:'today,prev,next,Miboton',
+            center:'title',
+            right:'month,basicWeek, basicDay, agendaWeek, agendaDay'
+          },
+          /*creacion de un boton
+          customButtons:{
+            Miboton:{
+              text:"Botón 1",
+              click:function(){
+                alert("Accion del boton")
+              }
+            }
+          },*/
+          dayClick:function(date,jsEvent,view){
+            alert("Valor seleccionado:" + date.format());
+            alert("Vista actual:" + view.name);
+            $(this).css('background-color','red');
+            $("#exampleModal").modal();
+          },
+          eventSources:[{
+            events:[
+            {
+              id:1,
+              title:'Semana de Villancicos',
+              descripcion:"Ultimos eventos",
+              start:'2022-12-12',
+              color:"#FF0F0",
+              textColor:"#FFFFFF"
+            },
+            {
+              title:'Ultimo dia Villancicos',
+              descripcion:"Concurso de Villancicos",
+              start:'2022-12-16',
+              color:"#FFF000",
+              textColor:"#FFFFFF"
+            },
+            {
+              title:'Noche Buena',
+              descripcion:"Navidad",
+              start:'2022-12-24',
+              end:'2022-12-26',
+            }
+          ],
+          color:"black",
+          textColor:"yellow",
+
+      }],
+      /*Funcion donde ca`turamos los eventos*/
+      eventClick:function(calEvent,jsEvent,view){
+        $('#tituloEvento').html(calEvent.title);
+        $('#descripcionEvento').html(calEvent.descripcion);
+        $('#exampleModal').modal();
+
+      }
+          
+    });
+ });
+</script>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEvento"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="descripcionEvento"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Agregar</button>
+        <button type="button" class="btn btn-success">Modificar</button>
+        <button type="button" class="btn btn-danger">Borrar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
